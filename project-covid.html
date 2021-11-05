@@ -62,6 +62,27 @@
           </div>
         </div>
       </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
@@ -82,7 +103,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/covid.jpg"
+              src="./assets/projects/covid.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -94,16 +115,55 @@
                 COVID-19 global pandemic affects health care and lifestyle worldwide, 
                 and its early detection is critical to control cases’ spreading and 
                 mortality. The actual leader diagnosis test is the Reverse transcription 
-                Polymerase chain reaction (RT-PCR), result times and cost of these tests are high, 
+                Polymerase Chain Reaction (RT-PCR), result times and cost of these tests are high, 
                 so other fast and accessible diagnostic tools are needed. Inspired by recent research 
                 that correlates the presence of COVID-19 to findings in Chest X-ray images, this project 
-                evaluates the use of deep learning models, in particular Convolutional Neural Network (CNN),
-                to process these images and classify them as positive or negative for COVID-19.
+                evaluates the use of deep learning models, in particular Convolutional Neural Networks (CNNs),
+                to process these images and classify them as positive or negative for COVID-19, furthermore
+                to develop a Computer Aided Diagnosis (CAD) tool for the disease.
               </p>
               <p class="project-details__desc-para">
                 The possibility of applying semantic segmentation or object localization to find the regions
                 of the image associated to COVID-19 presence, called Ground Glass Opacities (GGO) by radiologists,
                 it is also being explored.
+              </p>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Results Highlight</h3>
+              <p class="project-details__desc-para">
+                Results presented in this section correspond to experiments performed in [1] using transfer learning
+                on VGG16 and VGG19 networks. Specifically, the accuracies presented were achieved using lung segmentation
+                to force the model to extract information from the relevant areas for the task. For more information refer to the scientific
+                paper linked below.
+              </p>         
+              <table>
+                <caption style="caption-side:bottom; text-align: center;">Accuracies for VGG16 and VGG19 using lung segmentation [1].</caption>
+                <tr>
+                  <th>Model</th>
+                  <th>Train</th>
+                  <th>Validation</th>
+                  <th>Test</th>
+                </tr>
+                <tr>
+                  <td>VGG16</td>
+                  <td>0.9958</td>
+                  <td>0.9376</td>
+                  <td>0.9299</td>
+                </tr>
+                <tr>
+                  <td>VGG19</td>
+                  <td>0.9937</td>
+                  <td>0.9449</td>
+                  <td>0.9363</td>
+                </tr>
+              </table>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Products</h3>
+              <p class="project-details__desc-para">
+                [1] D. Arias-Garzón et al., “COVID-19 detection in X-ray images using convolutional neural networks,” 
+                <i>Mach. Learn. with Appl.</i>, vol. 6, p. 100138, Dec. 2021, doi: 
+                <a style="color: #0062b9;  text-decoration-line: underline;" href="https://doi.org/10.1016/j.mlwa.2021.100138">10.1016/j.mlwa.2021.100138</a>.
               </p>
             </div>
             <div class="project-details__tools-used">
@@ -113,7 +173,7 @@
                 <div class="skills__skill">TensorFlow</div>
                 <div class="skills__skill">PyTorch</div>
                 <div class="skills__skill">XNAT</div>
-                <div class="skills__skill">CTP</div>
+                <div class="skills__skill">Clinical Trials Processor (CTP)</div>
               </div>
             </div>
             <div class="project-details__links">
