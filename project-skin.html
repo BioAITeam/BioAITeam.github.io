@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 3</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Skin Lesion Classification</title>
+    <meta name="description" content="Optimized Convolutional Neural Network Models For Skin Lesion Classification" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -86,16 +86,15 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
+        <h1 class="heading-primary">Optimized Convolutional Neural Network Models For Skin Lesion Classification</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Research project carried out with the aim of developing a Computer Aided Diagnosis (CAD). tool
+            To detect different skin lesions, using Transfer Learning and data augmentation.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="https://www.techscience.com/cmc/v70n2/44641" class="btn btn--bg" target="_blank">Paper Link</a>
         </div>
       </div>
     </section>
@@ -104,7 +103,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/projects/project-mockup-example.jpeg"
+              src="./assets/projects/skin.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -113,49 +112,89 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
-              </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                Skin cancer is one of the most severe diseases, and medical imaging
+                is among the main tools for cancer diagnosis. The images provide information
+                on the evolutionary stage, size, and location of tumor lesions. This paper
+                focuses on the classification of skin lesion images considering a framework
+                of four experiments to analyze the classification performance of Convolutional
+                Neural Networks (CNNs) in distinguishing different skin lesions. The CNNs are based
+                on transfer learning, taking advantage of ImageNet weights. Accordingly, in each experiment,
+                different workflow stages are tested, including data augmentation and fine-tuning optimization.
+                Three CNN models based on DenseNet-201, Inception-ResNet-V2, and Inception-V3 are proposed
+                and compared using the HAM10000 dataset. The results obtained by the three models demonstrate
+                accuracies of 98%, 97%, and 96%, respectively. Finally, the best model is tested on the
+                ISIC 2019 dataset showing an accuracy of 93%. The proposed methodology using CNN represents
+                a helpful tool to accurately diagnose skin cancer disease.
               </p>
             </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Results Highlight</h3>
+              <p class="project-details__desc-para">
+               The results presented in this section correspond to the experiments performed in [1] using
+                transfer learning on VGG16 and VGG19 networks.
+                on the DenseNet-201, Inception-ResNet-V2, and Inception-V3 networks. Specifically, the
+                accuracies presented were achieved using Data Augmentation.
+                to level out the mismatch in the database and prevent overtraining with the data. For
+                more information, please refer to the scientific paper
+                article linked below.
+
+              </p>         
+              <table>
+                <caption style="caption-side:bottom; text-align: center;">Accuracies for DenseNet-201, Inception-ResNet-V2, and Inception-V3 using Transfer Learning [1].</caption>
+                <tr>
+                  <th>Model</th>
+                  <th>Train</th>
+                  <th>Validation</th>
+                  <th>Test</th>
+                </tr>
+                <tr>
+                  <td>DenseNet-201</td>
+                  <td>1</td>
+                  <td>0.98</td>
+                  <td>0.98</td>
+                </tr>
+                <tr>
+                  <td>Inception-ResNet-V2</td>
+                  <td>0.99</td>
+                  <td>0.96</td>
+                  <td>0.97</td>
+                </tr>
+                <tr>
+                  <td>Inception-V3</td>
+                  <td>0.99</td>
+                  <td>0.97</td>
+                  <td>0.96</td>
+                </tr>
+              </table>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Products</h3>
+              <p class="project-details__desc-para">
+                [1] J. Villa-Pulgarin et al., “Optimized Convolutional Neural Network Models for Skin Lesion Classification,” 
+                <i>Computers, Materials & Continua.</i>, vol. 70, pp. 2131-2148, Sep. 2021, doi: 
+                <a style="color: #0062b9;  text-decoration-line: underline;" href="10.32604/cmc.2022.019529"
+                target="_blank" rel="noreferrer">10.32604/cmc.2022.019529</a>.
+              </p>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TensorFlow</div>
+                <div class="skills__skill">Keras</div>
+                <div class="skills__skill">Data.Augmentation</div>
               </div>
             </div>
+            </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">See Resources</h3>
               <a
-                href="#"
+                href="https://www.techscience.com/cmc/v70n2/44641"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
+                >Paper Link</a
               >
               <a
-                href="#"
+                href="https://github.com/BioAITeam/Classification-of-skin-lesions-using-CNN-TransferLearning-and-Data-Augmentation"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Code Link</a
