@@ -800,10 +800,10 @@ https://codepen.io/petegarvin1/pen/YzWBbRx */
   opacity: 1;}
 
 .card5{
-  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/JPVP_gray.jpg?raw=true') center center no-repeat;
+  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/JPVP_gray.jpeg?raw=true') center center no-repeat;
   background-size: 300px;}
 .card5:hover{
-  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/JPVP_gray.jpg?raw=true') left center no-repeat;
+  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/JPVP_gray.jpeg?raw=true') left center no-repeat;
   background-size: 600px;}
 .card5:hover .h2card {
   opacity: 1;}
