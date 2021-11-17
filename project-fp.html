@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flow Pattern Prediction</title>
+    <meta name="description" content="Two-Phase flow patterns prediction using Machine Learning" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/semillero.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Team Bioinformatics and Artificial Intelligence</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <!--
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+            -->
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Two-Phase Flow Patterns Prediction using Machine Learning</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Research project intended to train Machine Learning models to predict flow patterns for 
+	    two-phase regimes in pipes, given the construction characteristics and measurements
+	    of physical variables.
+          </p>
+        </div>
+	<!--       
+	<div class="project-cs-hero__cta">
+          <a href="https://www.sciencedirect.com/science/article/pii/S2666827021000694?via%3Dihub" class="btn btn--bg" target="_blank">Paper Link</a>
+        </div>
+	-->
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/projects/fp.jpg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+		When gases and liquids flow simultaneously in a pipe, the phases can distribute themselves 
+		in various configurations depending on many variables. There is no convention in
+		the flow patterns number in two-phase flow due to overlapping and characterization subjectivity, 
+		especially in transition zones. Flow patterns change according to different physical properties 
+		and characteristics of the medium. The most notable physical properties of liquid and gas are 
+		superficial velocity, viscosity, density, and surface tension. Furthermore, the influence properties 
+		of the medium are the angle of inclination and the diameter of the pipe. Given the considerable number 
+		of variables, determining the flow pattern is not a trivial task, however, its accurate classification 
+		is essential for the proper design and planning of systems with pipelines.
+	      </p>
+              <p class="project-details__desc-para">
+                In the study of two-phase flows, the correct estimation is vital due to its relationship with the design 
+		variables such as phase holdup, pressure drop, and chemical reaction rate. The present research explores 
+		multiple artificial intelligence models for the classification of flow patterns since there is no universal 
+		model to perform this task. However, over time, progress has been made in defining the flow pattern, but there 
+		is still no theory that accurately characterize flow regimes. 
+              </p>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Results Highlight</h3>
+              <p class="project-details__desc-para">
+                Results presented in this section correspond to experiments performed during the development of this project. 
+		The corresponding scientific paper has already been submitted and its undergoing the review process, this page 
+		will be updated	as soon as the paper is published.
+              </p>         
+              <table>
+                <caption style="caption-side:bottom; text-align: center;">Performance Metrics</caption>
+		<tr>
+			<th>Model</th>
+			<th>Accuracy</th>
+			<th>Cross-validation</th>
+			<th>Run Time [sec]</th>
+		</tr>
+		<tr>
+			<td>Extra Trees</td>
+			<td>0.970</td>
+			<td>0.958 &#177 0.013</td>
+			<td>4.304</td>
+		</tr>
+		<tr>
+			<td>Random Forest</td>
+			<td>0.951</td>
+			<td>0.949 &#177 0.007</td>
+			<td>9.269</td>
+		</tr>
+		<tr>
+			<td>Support Vector Machine</td>
+			<td>0.948</td>
+			<td>0.934 &#177 0.012</td>
+			<td>32.02</td>
+		</tr>
+		<tr>
+			<td>Gradient Boosting</td>
+			<td>0.944</td>
+			<td>0.947 &#177 0.011</td>
+			<td>56.61</td>
+		</tr>
+		<tr>
+			<td>Decision Tree</td>
+			<td>0.934</td>
+			<td>0.919 &#177 0.008</td>
+			<td>0.187</td>
+		</tr>
+		<tr>
+			<td>K-Nearest Neighbors</td>
+			<td>0.897</td>
+			<td>0.887 &#177 0.011</td>
+			<td>0.325</td>
+		</tr>
+		<tr>
+			<td>Quadratic Discriminant Analysis</td>
+			<td>0.713</td>
+			<td>0.684 &#177 0.028</td>
+			<td>0.119</td>
+		</tr>
+		<tr>
+			<td>Gaussian Naive Bayes</td>
+			<td>0.695</td>
+			<td>0.674 &#177 0.021</td>
+			<td>0.097</td>
+		</tr>
+		<tr>
+			<td>Ada Boost</td>
+			<td>0.670</td>
+			<td>0.664 &#177 0.017</td>
+			<td>0.724</td>
+		</tr>
+	      </table> 
+            </div>
+	    <!--
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Products</h3>
+              <p class="project-details__desc-para">
+                [1] D. Arias-Garzón et al., “COVID-19 detection in X-ray images using convolutional neural networks,” 
+                <i>Mach. Learn. with Appl.</i>, vol. 6, p. 100138, Dec. 2021, doi: 
+                <a style="color: #0062b9;  text-decoration-line: underline;" href="https://doi.org/10.1016/j.mlwa.2021.100138"
+                target="_blank" rel="noreferrer">10.1016/j.mlwa.2021.100138</a>.
+              </p>
+            </div>
+	    -->
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TensorFlow</div>
+                <div class="skills__skill">Scikit-Learn</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Resources</h3>
+	      <!--
+              <a
+                href="https://www.sciencedirect.com/science/article/pii/S2666827021000694?via%3Dihub"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Paper Link</a
+              >
+	      -->
+              <a
+                href="https://github.com/BioAITeam/Machine-learning-applications-to-predict-two-phase-flow-patterns"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://github.com/BioAITeam">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <!--
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+              -->
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Team Bioinformatics and Artificial Intelligence</h4>
+            <p class="main-footer__short-desc">
+              <!-- Universidad Autónoma de Manizales </br> Contact at: <a href="mailto:rtabares@autonoma.edu.co">rtabares@autonoma.edu.co</a> -->
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
