@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 1</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Steganalysis</title>
+    <meta name="description" content="Deep Learning Applied to Steganalysis" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -89,9 +89,7 @@
         <h1 class="heading-primary">Deep Learning Steganalysis</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Research project intended to develop Convolutional Neural Network methods applied to spatial image steganalysis.
           </p>
         </div>
         <div class="project-cs-hero__cta">
@@ -104,7 +102,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/projects/project-mockup-example.jpeg"
+              src="./assets/projects/stega.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -113,49 +111,94 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                Steganography consists of hiding messages inside some object known as a carrier in order to establish a covert communication channel so that the act of communication itself goes unnoticed by observers who have access to that channel. The steganalysis is dedicated to the detection of hidden messages using steganography; these messages can be implicit in different types of media, such as digital images, video files, audio files or plain text. Traditionally, steganalysis has been divided into two separate stages, the first stage consists of manual extraction of sophisticated features and the second stage is classification using Ensemble Classifiers or Support Vector Machines. In recent years, the development of Deep Learning has made it possible to unify and automate the two traditional stages into an end to end approach with promising results. This paper shows the evolution of steganalysis in recent years using the Deep Learning techniques. The results of these techniques have surpassed those obtained with conventional methods - Rich Models with Ensemble Classifiers - both in the spatial and frequency (JPEG) domains. Since 2014, researchers have used The Convolutional Neural Networks to solve this problem generating diverse architectures and strategies to improve the detection percentages of steganographic images on the last generation algorithms (WOW, S-UNIWARD, HUGO, J-UNIWARD, among others). The Deep Learning, being applied to steganalysis, is now in the process of construction and results so far are encouraging for researchers that are interested in the topic.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                The possibility of applying deep learning methods to classify Cover and Stego images, the main focus is in the application on the spatial domain, the database used is BOSSBase 1.01, BOWS 2, and ALASKA 2.
+               </p>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Results Highlight</h3>
+              <p class="project-details__desc-para">
+                Results presented in this section correspond to experiments performed in [1] with the creation of a Convolutional Neural Network called GBRAS-Net. Specifically, the accuracies presented were achieved for image classification in the spatial domain. 
+              </p>         
+              <table>
+                <caption style="caption-side:bottom; text-align: center;">Accuracies for GBRAS-Net model applied to steganalysis [1].</caption>
+                <tr>
+                  <th>(Year) Algorithm</th>
+                  <th>WOW 0.2bpp</th>
+                  <th>WOW 0.4bpp</th>
+                  <th>S-UNIWARD 0.2bpp</th>
+                  <th>S-UNIWARD 0.4bpp</th>
+                </tr>
+                <tr>
+                  <td>(2020) GBRAS-Net</td>
+                  <td>80.3</td>
+                  <td>89.8</td>
+                  <td>73.6</td>
+                  <td>87.1</td>
+                </tr>
+                <tr>
+                  <td>(2019) Zhu-Net</td>
+                  <td>76.9</td>
+                  <td>88.1</td>
+                  <td>71.4</td>
+                  <td>84.5</td>
+                </tr>
+                <tr>
+                  <td>(2018) SR-Net</td>
+                  <td>75.5</td>
+                  <td>86.4</td>
+                  <td>67.7</td>
+                  <td>81.3</td>
+                </tr>
+                <tr>
+                  <td>(2017) Ye-Net</td>
+                  <td>66.9</td>
+                  <td>76.7</td>
+                  <td>60.1</td>
+                  <td>68.7</td>
+                </tr>
+                <tr>
+                  <td>(2012) SRM+EC</td>
+                  <td>63.5</td>
+                  <td>74.5</td>
+                  <td>63.4</td>
+                  <td>75.3</td>
+                </tr>
+              </table>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Products</h3>
+              <p class="project-details__desc-para">
+                [1] T. -S. Reinel et al., "GBRAS-Net: A Convolutional Neural Network Architecture for Spatial Image Steganalysis," in 
+                <i>IEEE Access</i>, vol. 9, pp. 14340-14350, 2021, doi: 
+                <a style="color: #0062b9;  text-decoration-line: underline;" href="https://doi.org/10.1109/ACCESS.2021.3052494"
+                target="_blank" rel="noreferrer">10.1109/ACCESS.2021.3052494</a>.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TensorFlow</div>
+                <!--
+                <div class="skills__skill">PyTorch</div>
+                <div class="skills__skill">XNAT</div>
+                <div class="skills__skill">Clinical Trials Processor (CTP)</div>
+              -->
               </div>
             </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">See Resources</h3>
               <a
-                href="#"
+                href="https://ieeexplore.ieee.org/document/9328287"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
+                >Paper Link</a
               >
               <a
-                href="#"
+                href="https://github.com/BioAITeam/Steganalysis"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Code Link</a
