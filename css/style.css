@@ -64,7 +64,7 @@ textarea {
 
 .heading-primary {
   font-size: 6rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 3px;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
@@ -164,6 +164,26 @@ textarea {
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
+.btn_access_doi {
+  background: #fff;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: transform .3s; }
+  .btn_access_doi:hover {
+    background-color: #f18500;
+    color: white;
+    transform: translateY(-3px); }
+  .btn_access_doi--med {
+    padding: 1.1rem 3rem;
+    font-size: 1.4rem; }
+  .btn_access_doi--theme {
+    background: #facf0f;
+    color: #111; }    
+
 .sec-pad {
   padding: 12rem 0; }
   @media only screen and (max-width: 56.25em) {
@@ -183,9 +203,18 @@ textarea {
 .d-none {
   display: none; }
 
+.home-hero-hbaa {
+  color: #fff;
+  background: linear-gradient(to right, rgba(144, 144, 144, 0.8), rgb(243, 145, 9)), url(../../assets/svg/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+  position: relative; }  
+
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(99, 170, 233, 0.8), rgba(99, 170, 233, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -274,6 +303,38 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
+
+.publications__row {
+  display: grid;
+  grid-template-columns: 4.0fr 1fr;
+  grid-gap: 5rem;}
+  /*margin-bottom: 11rem; }*/
+.publications__row-content {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start; }
+
+  @media only screen and (max-width: 56.25em) {
+    .publications__row-content {
+      align-items: center; } }
+  .publications__row-content-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+     }
+  @media only screen and (max-width: 45.5em) {
+    .publications__row-content-title {
+      font-size: 2.4rem; } }
+  .publications__row-content-desc {
+    font-size: 2.0rem;
+    color: grey;
+    max-width: 100rem;
+    line-height: 1.7;
+     }
+    @media only screen and (max-width: 45.5em) {
+      .publications__row-content-desc {
+        font-size: 1.7rem; } }
 
 .projects__row {
   display: grid;
@@ -404,7 +465,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(99, 170, 233, 0.8), rgba(99, 170, 233, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -730,6 +791,24 @@ https://codepen.io/petegarvin1/pen/YzWBbRx */
 .border:hover{
     border: 1px solid white; }
 
+.card_hbaa{
+  height: 379px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}    
+
 .card{
   height: 379px;
   width: 300px;
@@ -832,6 +911,28 @@ https://codepen.io/petegarvin1/pen/YzWBbRx */
 .card7:hover .fa {
   opacity: 1;}
 
+.card7_b{
+  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/HBAA.png?raw=true') center center no-repeat;
+  background-size: 300px;}
+.card7_b:hover{
+  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/HBAA.png?raw=true') left center no-repeat;
+  background-size: 600px;}
+.card7_b:hover .h2card {
+  opacity: 1;}
+.card7_b:hover .fa {
+  opacity: 1;}  
+
+.card8{
+  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/MABO_gray.jpeg?raw=true') center center no-repeat;
+  background-size: 300px;}
+.card8:hover{
+  background: url('https://github.com/BioAITeam/BioAITeam.github.io/blob/main/assets/authors/MABO_gray.jpeg?raw=true') left center no-repeat;
+  background-size: 600px;}
+.card8:hover .h2card {
+  opacity: 1;}
+.card8:hover .fa {
+  opacity: 1;}  
+
 .cardN{
   background-color: black;
 }
@@ -873,3 +974,44 @@ https://codepen.io/petegarvin1/pen/YzWBbRx */
   tr {
     border-bottom: 1px solid black;
   }
+
+
+/* Make sure that padding behaves as expected */
+* {box-sizing: border-box}
+
+
+.skills_text {
+  font-size: 1.8rem;
+  color: grey;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 0; }
+
+/* Container for skill bars */
+.container_skills {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  font-size: large;
+}
+
+.skills_bar {
+  text-align: right; /* Right-align text */
+  padding-top: 1px; /* Add top padding */
+  padding-bottom: 1px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.hbaa_skill_python {width: 96%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_latex {width: 92%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_tensor {width: 90%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_scikit {width: 90%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_linux {width: 70%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_sql {width: 50%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_java {width: 35%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_git {width: 30%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_github {width: 30%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_azure_devops {width: 30%; background-color: #04AA6D;} /* Dark Grey */
+.hbaa_skill_html {width: 28%; background-color: #04AA6D;} /* Green */
+.hbaa_skill_css {width: 28%; background-color: #04AA6D;} /* Blue */
+.hbaa_skill_js {width: 20%; background-color: #04AA6D;} /* Red */
+ 

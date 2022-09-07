@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/png/semilleroICON.png">
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,7 @@
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">Team Bioinformatics and Artificial Intelligence</span>
+          <span class="header__logo-sub">Bioinformatics and Artificial Intelligence Team</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -38,10 +39,11 @@
               <a href="./index.html#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link">Projects</a>
             </li>
+            <li class="header__link-wrapper">
+              <a href="./team-members.html" class="header__link">Members</a>
+            </li>            
             <!--
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
@@ -86,7 +88,7 @@
     </header>
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Welcome to our group page!</h1>
+        <h1 class="heading-primary">WELCOME!</h1>
         <div class="home-hero__info">
           <p class="text-primary">
             Here you can find information about the research team on Bioinformatics and Artificial Intelligence, including members and projects.
@@ -179,12 +181,18 @@
             <h3 class="about__content-title">Our Skills</h3>
             <div class="skills">
               <div class="skills__skill">Computer Vision</div>
+              <div class="skills__skill">Image Classification</div>
+              <div class="skills__skill">Text Classification</div>
+              <div class="skills__skill">Data Analysis</div>              
               <div class="skills__skill">Python</div>
               <div class="skills__skill">TensorFlow</div>
               <div class="skills__skill">PyTorch</div>
+              <div class="skills__skill">Latex</div>
               <div class="skills__skill">Scikit-Learn</div>
               <div class="skills__skill">XNAT</div>
               <div class="skills__skill">Clinical Trials Processor (CTP)</div>
+              <div class="skills__skill">GIT</div>  
+              <div class="skills__skill">SQL</div>            
             </div>
           </div>
         </div>
@@ -305,8 +313,31 @@
                 class="btn btn--med btn--theme dynamicBgClr"
                 >More Info</a
               >
-            </div>
+            </div>           
           </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/projects/textC.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Text classification for companies</h3>
+              <p class="projects__row-content-desc">
+                Research project intended to generate Machine Learning algorithms to classify text for companies, this project includes 
+                a data preprocessing using Natural Language Processing techniques.
+              </p>
+              <a
+                href="./project-textC.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >More Info</a
+              >
+            </div>            
+          </div>
+
         </div>
       </div>
     </section>
